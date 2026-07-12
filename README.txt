@@ -1,5 +1,4 @@
 Divine Lotus Group Private Limited Website
-Version: 2.0
 Developed by: Divine Lotus Group
 Website: https://divinelotusgroup.in
 Domain: divinelotusgroup.in 
