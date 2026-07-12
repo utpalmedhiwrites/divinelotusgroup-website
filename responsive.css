@@ -1,0 +1,277 @@
+/* ===================================================
+   Divine Lotus Enterprise V2
+   Responsive CSS
+=================================================== */
+
+/* ===============================
+Large Laptop (1400px)
+=============================== */
+
+@media (max-width:1400px){
+
+.container{
+width:min(94%,1200px);
+}
+
+.hero-content h1{
+font-size:60px;
+}
+
+.section-title h2{
+font-size:42px;
+}
+
+}
+
+/* ===============================
+Laptop
+=============================== */
+
+@media (max-width:1200px){
+
+.service-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.why-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.brand-grid{
+
+grid-template-columns:repeat(3,1fr);
+
+}
+
+.statistics .container{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.footer-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.about-preview .container{
+
+grid-template-columns:1fr;
+
+}
+
+.hero-content h1{
+
+font-size:54px;
+
+}
+
+}
+
+/* ==========================================
+   TABLET (991px)
+========================================== */
+
+@media (max-width:991px){
+
+section{
+padding:80px 0;
+}
+
+.header .container{
+padding:0 15px;
+}
+
+nav{
+display:none;
+}
+
+.mobile-toggle{
+display:block;
+}
+
+.header-btn{
+display:none;
+}
+
+.hero{
+height:90vh;
+}
+
+.hero-content h1{
+font-size:44px;
+}
+
+.hero-content p{
+font-size:18px;
+}
+
+.section-title h2{
+font-size:36px;
+}
+
+.contact-strip .container{
+grid-template-columns:1fr;
+}
+
+.leader-grid{
+grid-template-columns:1fr;
+}
+
+}
+
+/* ==========================================
+   MOBILE (768px)
+========================================== */
+
+@media (max-width:768px){
+
+.hero{
+height:85vh;
+}
+
+.hero-content{
+padding:0 20px;
+}
+
+.hero-content h5{
+font-size:15px;
+}
+
+.hero-content h1{
+font-size:34px;
+}
+
+.hero-content p{
+font-size:16px;
+line-height:1.8;
+}
+
+.hero-buttons{
+flex-direction:column;
+gap:15px;
+}
+
+.service-grid,
+.why-grid,
+.brand-grid,
+.statistics .container,
+.footer-grid{
+grid-template-columns:1fr;
+}
+
+.section-title h2{
+font-size:30px;
+}
+
+.about-content h2{
+font-size:32px;
+}
+
+.logo img{
+height:56px;
+}
+
+.whatsapp,
+.call-btn,
+#topBtn{
+width:54px;
+height:54px;
+right:18px;
+}
+
+.whatsapp{
+bottom:150px;
+}
+
+.call-btn{
+bottom:85px;
+}
+
+#topBtn{
+bottom:20px;
+}
+
+}
+
+/* ==========================================
+   SMALL MOBILE (480px)
+========================================== */
+
+@media (max-width:480px){
+
+.hero-content h1{
+font-size:28px;
+}
+
+.hero-content p{
+font-size:15px;
+}
+
+.section-title h2{
+font-size:26px;
+}
+
+.btn-primary,
+.btn-secondary{
+width:100%;
+}
+
+.container{
+width:94%;
+}
+
+}
+
+/* =========================================
+   MOBILE MEGA MENU
+========================================= */
+
+@media (max-width:992px){
+
+    .mega-menu{
+
+        position:static;
+
+        width:100%;
+
+        transform:none;
+
+        opacity:1;
+
+        visibility:visible;
+
+        display:none;
+
+        grid-template-columns:1fr;
+
+        padding:20px;
+
+        margin-top:10px;
+
+        box-shadow:none;
+
+        border-radius:10px;
+
+        background:#f7f7f7;
+
+    }
+
+    .has-mega:hover .mega-menu{
+
+        display:grid;
+
+    }
+
+    .mega-column{
+
+        margin-bottom:20px;
+
+    }
+
+}

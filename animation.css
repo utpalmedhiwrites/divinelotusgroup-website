@@ -1,0 +1,384 @@
+.reveal{
+    opacity:0;
+    transform:translateY(50px);
+    transition:all .8s ease;
+}
+
+.reveal.show{
+    opacity:1;
+    transform:translateY(0);
+}
+/* ==========================================
+   PREMIUM PAGE TRANSITION
+========================================== */
+
+body{
+    opacity:1;
+    transition:opacity .45s ease;
+}
+
+body.page-loading{
+    opacity:0;
+}
+
+.page-loader{
+    position:fixed;
+    inset:0;
+    background:#ffffff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:99999;
+    transition:.5s ease;
+}
+
+.page-loader.hide{
+    opacity:0;
+    visibility:hidden;
+}
+
+.loader-circle{
+    width:60px;
+    height:60px;
+    border:5px solid #e5e5e5;
+    border-top:5px solid #FFC107;
+    border-radius:50%;
+    animation:loaderSpin 1s linear infinite;
+}
+
+@keyframes loaderSpin{
+    to{
+        transform:rotate(360deg);
+    }
+}
+.mega-menu{
+
+animation:megaFade .35s ease;
+
+}
+
+@keyframes megaFade{
+
+from{
+
+opacity:0;
+
+transform:translateY(20px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+/* ==========================================
+   HERO KEN BURNS EFFECT
+========================================== */
+
+.hero-slide{
+
+overflow:hidden;
+
+}
+
+.hero-slide::before{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+background:inherit;
+
+background-size:cover;
+
+background-position:center;
+
+animation:kenburns 12s ease-in-out infinite alternate;
+
+z-index:-1;
+
+}
+
+@keyframes kenburns{
+
+0%{
+
+transform:scale(1);
+
+}
+
+100%{
+
+transform:scale(1.12);
+
+}
+
+}
+/* ==========================================
+   HERO CONTENT ANIMATION
+========================================== */
+
+.hero-content h5{
+
+animation:fadeDown .8s ease both;
+
+}
+
+.hero-content h1{
+
+animation:fadeUp 1s ease both;
+
+}
+
+.hero-content p{
+
+animation:fadeUp 1.3s ease both;
+
+}
+
+.hero-buttons{
+
+animation:fadeUp 1.6s ease both;
+
+}
+
+@keyframes fadeDown{
+
+from{
+
+opacity:0;
+
+transform:translateY(-40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+/* ==========================================
+   HEADER ANIMATION
+========================================== */
+
+header{
+
+transition:
+
+background .4s,
+
+padding .4s,
+
+box-shadow .4s,
+
+transform .4s;
+
+}
+
+header.sticky{
+
+animation:headerDrop .45s ease;
+
+}
+
+@keyframes headerDrop{
+
+from{
+
+opacity:0;
+
+transform:translateY(-25px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+/* ==========================================
+   MEGA MENU ANIMATION
+========================================== */
+
+@keyframes megaFade{
+
+from{
+
+opacity:0;
+transform:translateY(25px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+.has-mega:hover .mega-menu{
+
+animation:megaFade .35s ease;
+
+}
+/* ==========================================
+   MOBILE MENU ANIMATION
+========================================== */
+
+@keyframes menuSlide{
+
+from{
+
+right:-100%;
+
+}
+
+to{
+
+right:0;
+
+}
+
+}
+
+nav.active{
+
+animation:menuSlide .45s ease;
+
+}
+/* ==========================================
+   HAMBURGER HOVER
+========================================== */
+
+.mobile-toggle:hover{
+
+transform:scale(1.08);
+
+transition:.3s;
+
+}
+
+.mobile-toggle span{
+
+transition:all .35s ease;
+
+}
+/* Navigation Hover */
+
+nav ul li{
+    transition:transform .25s ease;
+}
+
+nav ul li:hover{
+    transform:translateY(-2px);
+}
+.hero-content h1{
+
+font-size:64px;
+
+line-height:1.1;
+
+font-weight:800;
+
+letter-spacing:-1px;
+
+color:#fff;
+
+}
+
+.hero-content p{
+
+font-size:20px;
+
+line-height:1.8;
+
+color:#f2f2f2;
+
+margin:30px 0;
+
+}
+.float{
+
+animation:floating 4s ease-in-out infinite;
+
+}
+
+@keyframes floating{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-12px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
+.counter{
+
+font-size:48px;
+
+font-weight:800;
+
+color:#FFC107;
+
+transition:.35s;
+
+}
+/* ==========================================
+   SERVICE ICON
+========================================== */
+
+.service-card i{
+
+transition:.35s;
+
+}
+
+.service-card:hover i{
+
+transform:rotate(10deg) scale(1.2);
+
+color:#FFC107;
+
+}
+/* ==========================================
+   PRODUCT BUTTON
+========================================== */
+
+.product-card .btn{
+
+transition:.35s;
+
+}
+
+.product-card:hover .btn{
+
+background:#FFC107;
+
+color:#000;
+
+transform:translateY(-3px);
+
+}
