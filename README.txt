@@ -10,11 +10,6 @@ Followthis step/
 ├── contact.html
 ├── projects.html
 ├── leadership.html
-└── assets/
-    ├── css/
-    │   ├── style.css
-    │   ├── responsive.css
-    │   └── animation.css
-    ├── js/
-    ├── images/
-    └── ...
+style.css
+responsive.css
+animation.css
